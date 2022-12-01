@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" conten="IE=edge">
+        <meta name="viewport" conten="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" src= estilos.css>
+    </head>
+    <body>
+        <script src="hola.js"></script>
+
+        <h1>Laberinto.</h1>
+        <p>parrafo</p>
+        <form id="parametros">
+            <label> 
+                <span> Ancho: </span>
+                <input type="number" name="cell-width" value="10"/>
+            </label>
+            <label>
+                <span> Largo: </span>
+                <input type="number" name="cell-height" value="10"/>
+            </label>
+            <label>
+                <span> HORIZONTAL: </span>
+                <input type="number" name="horizontal-cells" value="40"/>
+              </label>
+              <label>
+                <span> VERTICAL: </span>
+                <input type="number" name="vertical-cells" value="40"/>
+              </label>
+              <button>Generar nuevo laberinto</button>
+        </form>
+        <div id="maze"></div>
+    </body>
+</html>
