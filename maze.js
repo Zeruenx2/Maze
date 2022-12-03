@@ -1,5 +1,18 @@
 var numberOfCells = 0;
 var visitedCells = 0;
+
+var cellMatrix = [];
+
+function datos() {
+    matriz = [];
+    alto = parseInt(document.getElementById("altura").value);
+    ancho = parseInt(document.getElementById("ancho").value);
+
+    initMaze(alto,ancho);
+
+    document.getElementById('out').innerHTML = matriz.join('\n');
+}
+
 class Wall {
   constructor(options = {}) {
     this.leftCell = options.leftCell || null;
@@ -60,8 +73,6 @@ class Cell {
     return unvisitedNeighbours[Math.floor(Math.random()*unvisitedNeighbours.length)]
   }
 }
-
-var cellMatrix = [];
 
 function initMaze(horizontalCells, verticalCells) {
   
